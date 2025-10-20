@@ -1,55 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Eater&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Eater&family=Mountains+of+Christmas:wght@400;700&display=swap');
-:root{
---fonte-titulo:'Eater';
---fonte-texto:'Mountains';
---cor-principal: #0D0D0D; 
---cor-segundaria: #1C2B2D; 
---cor-destaque: #E4D00A; 
---cor-texto:#E0E0E0; 
+
+:root {
+    --fonte-titulo: 'Eater';
+    --fonte-texto: 'Mountains';
+    --cor-principal: #0D0D0D;
+    --cor-segundaria: #1C2B2D;
+    --cor-destaque: #E4D00A;
+    --cor-texto: #E0E0E0;
 }
-body{
+
+body {
     background-color: var(--cor-principal);
     color: var(--cor-texto);
     font-family: var(--fonte-texto);
+    display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    
+    margin: 0; /* Remove margens padrões do body */
 }
-.caixa-principal{
+
+.caixa-principal {
     background-color: var(--cor-principal);
     width: 90%;
     max-width: 600px;
     text-align: center;
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Alinha os itens na coluna */
 }
-h1, .caixa-perguntas, .caixa-resultados{
+
+h1, .caixa-perguntas, .caixa-resultados {
     font-family: var(--fonte-titulo);
 }
-h1{
+
+h1 {
     color: var(--cor-destaque);
 }
-button{
+
+button {
     background-color: var(--cor-segundaria);
     color: var(--cor-texto);
     border: none;
     border-radius: 15px;
     padding: 15px;
-    transition: backgrond-color 0.3s;
+    transition: background-color 0.3s; /* Corrigido erro de digitação */
 }
-button :hover {
+
+button:hover {
     background-color: var(--cor-destaque);
     color: var(--cor-principal);
 }
-.caixa-resultados{
+
+.caixa-resultados {
     display: none;
 }
-.caixa-resultados.mostrar{
+
+.caixa-resultados.mostrar {
     display: block;
 }
-.caixa-alternativa{
+
+.caixa-alternativa {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    align-items: center; /* Centraliza as alternativas */
 }
