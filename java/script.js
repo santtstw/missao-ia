@@ -2,8 +2,8 @@ const caixaPrincipal = document.querySelector(".caixa-principal");
 const caixaPergunta = document.querySelector(".caixa-perguntas");
 const caixaAlternativas = document.querySelector(".caixa-alternativa");
 const caixaResultados = document.querySelector(".caixa-resultado");
-const caixaResultados = document.querySelector(".texto-resultado");
-const cbotaoJogarNovamente = document.querySelector(".novamente-botao");
+const textoResultadoResultados = document.querySelector(".texto-resultado");
+const botaoJogarNovamente = document.querySelector(".novamente-botao");
 const telaInicial = document.querySelector(".tela-inicial");
 const botaoInicial = document.querySelector(".iniciar-botao");
 
