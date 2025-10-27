@@ -41,7 +41,7 @@ function mostraAlternativas(){
 
  }
 function mostraAfirmacoes(){
-    for(const Afirmacoesof perguntaAtual.afirmacoes){
+    for(const Afirmacoes of perguntaAtual.afirmacoes){
 
     }
 }
@@ -49,7 +49,7 @@ function mostraAfirmacoes(){
 function respostaSelecionada(opcaoSelecionada){
     const afirmacoes =aleatorio(opcaoSelecionada.afirmacao);
     historiaFinal += afirmacoes + "";
-    if (opcaoSelecionada.proxima ! == undefined){
+    if (opcaoSelecionada.proxima !== undefined){
         atual = opcaoSelecionada.proxima;
     }else{
         mosstraResultado();
@@ -71,7 +71,7 @@ function jogaNovamente(){
     mostraPergunta();
 }
 function substituiNome(){
-    for (constante pergunta of perguntas){
+    for (const pergunta of perguntas){
         pergunta.enunciado = pergunta.enunciado.replace(/você/g, nome);
     }
 }
